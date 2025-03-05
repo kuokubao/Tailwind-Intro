@@ -1,0 +1,32 @@
+@import "tailwindcss";
+
+@theme {
+  --deepblue: #3f8ab9;
+  --lightblue: #abdbe3;
+  --lightgrey: #f5f5f5;
+}
+.bg-deepblue {
+  background-color: var(--deepblue);
+}
+.bg-lightblue {
+  background-color: var(--lightblue);
+}
+.bg-lightgrey {
+  background-color: var(--lightgrey);
+}
+.text-deepblue {
+  color: var(--deepblue);
+}
+.text-lightblue {
+  color: var(--lightblue);
+} 
+
+@utility container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 10px;
+}
+
+@source './node_modules/some-third-party-lib/**/*.css';
+
+@plugin 'tailwindcss-animate';
